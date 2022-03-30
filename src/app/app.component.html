@@ -1,5 +1,14 @@
 <h1>angular test</h1>
 
+<div class="content">
+  <span>Pippo</span>
+  <span>AngularTest app is running!</span>
+</div>
+
 <p *ngIf="user2">{{user2.name}}</p>
+
+<app-pippo
+(userSaved)="onUserSaved()"
+></app-pippo>
 
 <router-outlet></router-outlet>

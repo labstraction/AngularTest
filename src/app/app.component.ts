@@ -13,6 +13,8 @@ export class AppComponent  implements OnInit{
 
   user2?: any;
 
+  userChanged = false;
+
   ngOnInit(): void {
     //window.sessionStorage.setItem("ciao", "mondo");
     window.localStorage.setItem("pippo", JSON.stringify(this.user));
@@ -41,5 +43,9 @@ export class AppComponent  implements OnInit{
 
     console.log(document.cookie);
     
+  }
+
+  onUserSaved(){
+
   }
 }
