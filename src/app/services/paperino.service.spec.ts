@@ -7,7 +7,8 @@ describe('PaperinoService', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    //service = TestBed.inject(PaperinoService);
+    //TestBed.configureTestingModule({ providers: [PaperinoService] });
+    service = TestBed.inject(PaperinoService);
   });
 
   it('should be created', () => {
